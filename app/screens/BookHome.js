@@ -120,6 +120,7 @@ function BookHome(props) {
                 style={{ bottom: 60, marginHorizontal: 15 }}
             >
                 <Image style={{ marginTop: 10 }} source={require('../assets/Group_95.png')} />
+                <Image style={{ marginTop: 10 }} source={require('../assets/Group_95.png')} />
             </ScrollView>
         </ScrollView >
     );
