@@ -3,14 +3,14 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBStxEVP7U1r5DzLVE6jg1qURJ1VeYlOxw",
-    authDomain: "eeshop-4347d.firebaseapp.com",
-    databaseURL: "https://eeshop-4347d-default-rtdb.firebaseio.com",
-    projectId: "eeshop-4347d",
-    storageBucket: "eeshop-4347d.appspot.com",
-    messagingSenderId: "162551049670",
-    appId: "1:162551049670:web:dfbf4804c7ab7d35b056c7",
-    measurementId: "G-QB3C05M9XG"
+    apiKey: "AIzaSyCdtAKzffo4Ph_nUtTfmKPeJck2W_NBvbA",
+    authDomain: "bordima-45b21.firebaseapp.com",
+    databaseURL: "https://bordima-45b21-default-rtdb.firebaseio.com",
+    projectId: "bordima-45b21",
+    storageBucket: "bordima-45b21.appspot.com",
+    messagingSenderId: "95041535486",
+    appId: "1:95041535486:web:148437afe2b753ef1e14af",
+    measurementId: "G-MKDC108LB2"
 };
 
 if (!firebase.apps.length) {

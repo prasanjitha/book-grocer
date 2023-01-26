@@ -64,6 +64,20 @@ export const submitUserData = (data, props) => async dispatch => {
         });
         const email = data.email;
         const password = data.password;
+        console.log('Add data to the firestore database');
+        // await firebase.firestore().collection('userrs').doc('auth.currentUser!.uid').set({
+        //     "FirstName": 'firstName',
+        //     "LastName": 'lastName',
+        //     "role": 'role',
+        //     "email": 'email',
+        //     "province": '',
+        //     "town": '',
+        //     "userId": ' auth.currentUser!.uid'
+        // }).then(() => {
+        //     console.log('user added!')
+        // }).catch((err) => {
+        //     console.log(err);
+        // });
         await firebase.auth()
             .createUserWithEmailAndPassword(email, password)
             .then(() => {
@@ -78,6 +92,7 @@ export const submitUserData = (data, props) => async dispatch => {
                 }
                 console.error(error);
             });
+
         props.navigation.navigate('SignIn')
         dispatch({
             type: SET_IS_LOADING,
