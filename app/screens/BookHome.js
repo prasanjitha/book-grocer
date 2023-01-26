@@ -110,7 +110,7 @@ function BookHome(props) {
             </ScrollView>
             <Text style={{
                 fontSize: 24,
-                fontWeight: 'bold',
+                fontWeight: '500',
                 bottom: 80,
                 marginHorizontal: 15,
             }}>Bestsellers</Text>
