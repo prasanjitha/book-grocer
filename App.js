@@ -16,12 +16,13 @@ import StudentMainHome from './app/screens/StudentMainHome';
 import StudentProfile from './app/screens/StudentProfile';
 import colors from './app/config/colors';
 import UploadImage from './app/screens/UploadImage';
+import UserLogin from './app/screens/views/UserLogin';
 
 
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => (
   <Stack.Navigator >
-    <Stack.Screen options={{ headerShown: false }} name='UploadImage' component={UploadImage}></Stack.Screen>
+    <Stack.Screen options={{ headerShown: false }} name='UploadImage' component={UserLogin}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='SignUp' component={SignUp}></Stack.Screen>
     {/* <Stack.Screen options={{
       headerShown: true,
