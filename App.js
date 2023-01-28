@@ -12,16 +12,30 @@ import Toast from 'react-native-toast-message';
 import MainHome from './app/screens/MainHome';
 import Details from './app/screens/Details';
 import BookHome from './app/screens/BookHome';
+import StudentMainHome from './app/screens/StudentMainHome';
+import StudentProfile from './app/screens/StudentProfile';
+import colors from './app/config/colors';
+import UploadImage from './app/screens/UploadImage';
+import UserLogin from './app/screens/views/UserLogin';
 
 
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => (
   <Stack.Navigator >
-    <Stack.Screen options={{ headerShown: false }} name='BookHome' component={BookHome}></Stack.Screen>
+    <Stack.Screen options={{ headerShown: false }} name='UploadImage' component={UserLogin}></Stack.Screen>
+    <Stack.Screen options={{ headerShown: false }} name='SignUp' component={SignUp}></Stack.Screen>
+    {/* <Stack.Screen options={{
+      headerShown: true,
+      title: 'My Profile',
+      headerStyle: {
+        backgroundColor: colors.primary,
+      },
+      headerTitleAlign: 'center',
+      headerTintColor: colors.white,
+    }} name='BookHome' component={StudentProfile}></Stack.Screen> */}
     <Stack.Screen options={{ headerShown: false }} name='OnboardingOne' component={OnboardingOne}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='MainHome' component={Home}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='Details' component={Details}></Stack.Screen>
-    <Stack.Screen options={{ headerShown: false }} name='SignUp' component={SignUp}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='Home' component={MainHome}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='SignIn' component={SignIn}></Stack.Screen>
   </Stack.Navigator>
