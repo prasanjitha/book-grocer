@@ -24,7 +24,7 @@ const StackNavigator = () => (
   <Stack.Navigator >
     <Stack.Screen options={{ headerShown: false }} name='UploadImage' component={UserLogin}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='SignUp' component={SignUp}></Stack.Screen>
-    {/* <Stack.Screen options={{
+    <Stack.Screen options={{
       headerShown: true,
       title: 'My Profile',
       headerStyle: {
@@ -32,7 +32,7 @@ const StackNavigator = () => (
       },
       headerTitleAlign: 'center',
       headerTintColor: colors.white,
-    }} name='BookHome' component={StudentProfile}></Stack.Screen> */}
+    }} name='BookHome' component={StudentProfile}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='OnboardingOne' component={OnboardingOne}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='MainHome' component={Home}></Stack.Screen>
     <Stack.Screen options={{ headerShown: false }} name='Details' component={Details}></Stack.Screen>
